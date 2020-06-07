@@ -1,0 +1,6 @@
+<h1>{{post}}</h1>
+<br>
+<h1>{{post.content}}</h1>
+<hr>
+<button><a href="{% url 'blog:edit_post' post.id %}">edit post</a></button>
+<button><a href="{% url 'blog:delete_post' post.id %}">delete post</a></button>

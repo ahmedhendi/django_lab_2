@@ -1,0 +1,9 @@
+<h1>welcome in my new app</h1>
+
+<button> <a href="{% url 'blog:create_post' %}"> create post </a></button>
+
+{% for post in all_posts %}
+    <h3><a href="{% url 'blog:post' post.id %}" >
+        {{post.title}} </a></h3>
+{% endfor %}
+<button><a href="{% url 'blog:admin' %}"> admin </a></button>
